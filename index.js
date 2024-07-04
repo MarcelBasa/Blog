@@ -71,3 +71,5 @@ function getCurrentDate(){
 
      return hours + ":" + minutes + ", " + day + "." + month + "." + year;
 }
+
+// dupa
