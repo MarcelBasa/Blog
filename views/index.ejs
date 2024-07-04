@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+    <div class = "container">
+        <h2>Posts below</h2>
+        <% if(locals.allPosts){ %>
+        <% allPosts.forEach((post, index) => { %>
+        <div class = "item" data-index=<%= index %>>
+            <h3> <%= post.topic %> </h3>
+            <hr/>
+            <p> <%= post.content %> </p>
+            <span class="date"> <%= post.date %> </span>
+            <input type = "button" data-index=<%= index %> class="edit-button" value="Edit"/>
+            <input type = "button" data-index=<%= index %> class="delete-button" value="Delete"/>
+        </div>
+        <% })} %>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+    <div class="container">
+        <h2>Edit post</h2>
+        <form action = "/edit/ <%= index %>" method="POST">
+            <input type="text" name="TopicOfPost" placeholder="Topic" value=<%= post.topic%> required/>
+            <br/><br/>
+            <textarea type="text" name="TextContentPost"><%= post.content %></textarea>
+            <br/>
+            <input type="submit" value="Save"/>        
+        </form>
+    </div>
+</body>
+
+<%- include("partials/footer.ejs") %>
