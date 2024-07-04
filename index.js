@@ -25,7 +25,7 @@ app.post("/submit", (req, res) => {
     let singlePost = {
         topic: req.body['TopicOfPost'],
         content: req.body['TextContentPost'],
-        date: currentDate()
+        date: getCurrentDate()
     }
     posts.unshift(singlePost);
     res.redirect('/');
@@ -46,7 +46,7 @@ app.post('/edit/:index', (req, res) => {
     const updatedContent = req.body['TextContentPost'];
     posts[Number(postIndex)].topic = updatedTopic;
     posts[Number(postIndex)].content = updatedContent;
-    posts[Number(postIndex)].date = currentDate();
+    posts[Number(postIndex)].date = getCurrentDate();
     res.redirect('/');
 });
 
@@ -59,7 +59,7 @@ app.listen(port, ()=> {
     console.log(`Server is working on port: ${port}`);
 })
 
-function currentDate(){
+function getCurrentDate(){
     let currentDate = new Date();
 
     let day = currentDate.getDate();
