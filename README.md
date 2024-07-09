@@ -1,13 +1,13 @@
 # Blog
 
-Installation
+## Installation
 1. Clone the repo
 ```
-git clone 'URL'
+git clone https://github.com/MarcelBasa/Blog.git
 ```
 2. Navigate to the project directory
 ```
-cd project_name
+cd Blog
  ```
 3. Install NPM packages
 ```
