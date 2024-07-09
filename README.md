@@ -11,8 +11,8 @@ Simple Blog App is a web application for displaying, adding, editing, and deleti
 ## Technologies
 - **Node.js**
 - **JavaScript (JS)**
-- **Express**
 - **EJS**
+- **Express**
 - **HTML/CSS**
 
 ## Installation
