@@ -18,7 +18,7 @@ Simple Blog App is a web application for displaying, adding, editing, and deleti
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/Blog.git
+    git clone https://github.com/MarcelBasa/Blog.git
     ```
 2. Navigate to the project directory:
     ```sh
